@@ -14,7 +14,7 @@ except:
         
 for filename in os.listdir():               #iterate through files in directory
     
-    if filename.endswith(".las"):
+    if filename.lower().endswith(".las"):
         count = 0
         try:
             fhand = open(filename)           #open *las file
